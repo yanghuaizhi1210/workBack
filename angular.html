@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.js"></script>
+
+</head>
+<body>
+	<div ng-app='textName' ng-controller='textCont'>
+		
+		<input type="text" ng-model="firstName">
+		<input type="text" ng-model="lastName">
+
+		<h1>{{firstName+"."+lastName}}</h1>
+
+	</div>
+
+	<script>
+	var app=angular.module('textName',[])
+	app.controller('textCont',function($scope){
+
+		$scope.firstName='yanghuaizhi';
+		$scope.lastName='yanghuaizhi2';
+
+
+	})
+
+	</script>
+	
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.js"></script>
+
+</head>
+<body>
+	
+	<!-- <div ng-app='' ng-init='a=1;b=2'>
+		
+		<input type="number" ng-model='a'>
+		<input type="number" ng-model='b'>
+	
+		计算结果为:	<h1>{{a*b}}</h1>
+	
+	
+	</div> -->
+
+	<!-- <div ng-app='' ng-init="name=[{
+	firstName:'yanghuaizhi',
+	lastName:'wuyanzu'
+	},{
+	firstName:'yanghuaizhi2',
+	lastName:'wuyanzu2'
+	}]">
+	
+		<ul>
+			<li ng-repeat='x in name'>
+				{{x.firstName+','+x.lastName}}
+			</li>
+		</ul>
+		
+	</div> -->
+
+	<div ng-app='myOrder'>
+
+
+	<div wozijidingyideshuxing></div>	
+	</div>
+	<script>
+
+	var myOrder=angular.module('myOrder',[]);
+
+	myOrder.directive('wozijidingyideshuxing',function(){
+		
+		return {
+
+			template :'哈哈哈哈哈哈'
+
+		}
+
+	})
+
+	</script>
+</body>
+</html>
